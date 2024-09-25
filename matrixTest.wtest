@@ -1,9 +1,21 @@
+import matrix.*
 
+describe "Test de matriz " {
 
-describe "group of tests " {
+  test "Hay 3 pasajeros" {
+    assert.equals(3, nave.cantidadDePasajeros())
+  }
 
-  test "test 01" {
-    assert.equals(100, 50+50)
+  test "Pasajero con mas vitalidad" {
+    assert.equals(morfeo, nave.pasajeroConMasVitalidad())
+  }
+
+  test "Esta equilibrada la nave de vitalidad" {
+    assert.notThat(nave.hayUnaVitalidadEquilibrada())
+  }
+
+  test "Esta el elegido en la nave" {
+    assert.that(nave.estaElElegido())
   }
 
 }
